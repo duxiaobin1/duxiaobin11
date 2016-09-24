@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/swiper.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+	
+	<style>
+		*{padding:0;
+		  margin:0;
+		}
+		body,html{
+			width:100%;
+			height:100%;
+			overflow:hidden;
+			font-size:20px;
+
+		}
+		.swiper-container,.swiper-wrapper,.swiper-slide{
+			width:100%;
+			height:100%;
+			color:#333;
+		}
+		.swiper-container{
+			position:relative;
+			overflow:hidden;
+		}
+		.swiper-slide1{
+			background:#fff;
+			position:relative;
+		}
+		.swiper-slide1 .tu1{
+			position:absolute;
+			top:0;
+		}
+		.swiper-slide1 .tu2{
+			position:absolute;
+			top:50%;
+			margin-top:-3.125rem;
+		}	
+		
+		.swiper-slide1 .tu3{
+			position:absolute;
+			bottom:0;
+
+		}
+		.swiper-slide2 .tu4{
+			width:100%;
+			height:100%;
+		}
+
+		.swiper-slide2{
+			position:relative;
+
+		}
+		 .tu5,.tu6,.tu7{
+		 	position:absolute;
+		 	
+		}
+		.tu6{
+			width:11.45rem;
+			top:8.75rem;
+			left:2.5rem;
+		}
+		.tu5{
+			left:4.5rem;
+			top:4.5rem;
+			color:#fff;
+			font-size:20px;
+		}
+		.tu7{
+			left:4.5rem;
+			bottom:4.5rem;
+			color:#fff;
+			font-size:20px;
+		}
+
+		.swiper-slide3{
+			position:relative;
+
+		}
+		img{width:100%;}
+		.tu9{width:6.25rem;
+			position:absolute; 
+			top:0;
+			right:0;
+		}
+		.tu8{width:6.25rem;
+			position:absolute; 
+			top:0;
+			left:0;
+		}
+		.tu10{width:3.45rem;
+			position:absolute;
+				left:5.0rem;
+				top:2.5rem;
+
+		}
+		.tu11{width:3.45rem;
+			position:absolute;
+			  right:3.0rem;
+			  bottom:1.25rem;}
+
+		.tu12{width:6.25rem;
+			position:absolute;
+			  bottom:0;
+			  left:0;}
+		.swiper-slide4{
+			position:relative;
+		}
+		.tu13{
+			position:absolute;
+		}
+		.tu13{
+			top:2.5rem;
+			left:0.5rem;
+		}
+		.swiper-tu14{
+			position:absolute;
+			bottom:0;
+			height:10rem;
+			background:red;
+			width:100%;
+		}
+		.tu14{
+			top:5.0rem;
+			position:absolute;
+			width:100%;
+			height:-2.3rem;
+			top:-1.05rem;
+			left:0;
+		}
+		.swiper-tu15{
+			text-align:center;
+			color:#fff;
+			width:100%;
+			display:inline-block;
+			font-size:0.5rem;
+			margin-top:4rem;
+		}
+		.xiahu{
+		  background:url(img/units-icons.png) no-repeat -55px 0;
+		  width:55px;
+		  height:55px;
+		  bottom:20px;
+		  position:absolute;
+		  left:50%;
+		  margin-left:-27.5px;
+		  animation:xiahu 2s ease-in-out infinite;
+
+		}
+		@keyframes  xiahu {
+		    0%{ top:90%;
+		          opacity:0;       
+		    }
+		     50%{  top:88%;
+		          opacity:1; }
+		     100%{
+		          top:87%;
+		           opacity:0;
+		     }     
+		 }
+		 .play{
+			  position:absolute;
+			  top:1.25rem;
+			  right:1rem;
+			  width:55px;
+			  height:55px; 
+			  
+			}
+			.hahah{
+			  animation:zhuan2  2s linear infinite;
+			}
+			@keyframes zhuan2{
+			  from{transform:rotateZ(0);}
+			  to{transform:rotateZ(360deg);}
+			}
+			.play input{
+			  width:55px;
+			  height:55px;
+			  background:url(img/units-icons.png) no-repeat ;
+			  border:none;
+			  outline:none;
+			}
+		
+		
+
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide  swiper-slide1 swiper-red">
+				<img src="img/c3010e34-7309-465a-9da8-9b307c8d3661.png" alt="" class="ani tu1" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+				<img src="img/2d2e6bd2-bb38-43df-87c3-544c63602e9c.png" alt="" class="ani tu2" swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+				<img src="img/53ddf761-9004-4702-90a9-cfe6c56ddf5b.png" alt="" class="ani tu3" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+			</div>
+			<div class="swiper-slide  swiper-slide2 swiper-yellow">
+				<img src="img/2578d15b-3b18-45f5-87a2-598b68eaa545.png" alt="" class="ani tu4" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+				<div class="ani tu5" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">花开富贵年年好</div>
+				<img src="img/fe5a1b04-ddc1-446f-b74d-47611d4cd4e1.png" alt="" class="ani tu6" swiper-animate-effect="rotateIn" swiper-animate-duration="2s" swiper-animate-delay="1s">
+				<div class="ani tu7" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">竹报平安岁岁丰</div>
+
+			</div>
+			<div class="swiper-slide  swiper-slide3 swiper-blue">
+				<img src="img/a9dea875-068b-4da8-84ee-717af08e309b.png" alt="" class="ani tu8" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
+				<img src="img/3c266274-8bbf-4325-8d66-10cf247bb2f6.png" alt="" class="ani tu9" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0s"/>
+				<img src="img/d8887349-47ef-4b41-ac12-3890883ab0b8.png" alt="" class="ani tu10" swiper-animate-effect="flipInY" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
+				<img src="img/4a59f0de-78b4-4f83-af82-426d647549e7.png" alt="" class="ani tu11" swiper-animate-effect="flipInY" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
+				<img src="img/e2c304e8-7547-4835-ae35-a8210caf4c91.png" alt="" class="ani tu12" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0s"/>
+			</div>
+			<div class="swiper-slide  swiper-slide4">
+				<img src="img/2779ba88-3ca6-4e5a-b23a-60cd0c459220.png" class="ani tu13" swiper-animate-effect="zoomInDown" swiper-animate-duration="2s" swiper-animate-delay="0s">	
+				<div class="swiper-tu14 ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="2s" swiper-animate-delay="0s">
+					<img src="img/1a189ef7-db1f-4772-84b3-503ec58934ca.png" class="tu14">
+					<div class="swiper-tu15 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+					一帆风顺,二世龙腾,三羊开泰,<br/>
+					四季平安,五福临门,六六大顺,<br/>
+					七星高照,八方进宝,九子登科,<br/>
+					十全十美,百年好合,千载良缘,<br/>
+					     万事如意,新春快乐。
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+			<div class="swiper-pagination"></div>
+			<div class="play hahah" style="z-index:2000">
+       				 <input type="button" value=""/>
+  			</div>
+  			<div class="xiahu" style="z-index:2000"></div>
+  		<audio id="aud">
+        		<source id="hah" src="audio/BY2 - 爱上你.mp3"></source>
+    		</audio> 
+	</div>
+	<script type="text/javascript">
+			  var aud=document.getElementById('aud')
+			  var btn=document.getElementsByTagName('input')
+			        aud.play()
+			        btn[0].onclick=function(){
+			        if(aud.paused){
+			         $(".play").addClass("hahah")
+			          aud.play()
+			        }else{
+			          aud.pause()
+			         $(".play").removeClass("hahah")
+			        }
+			      }
+			 var mySwiper = new Swiper('.swiper-container',{
+			 	direction: "vertical",
+			 	loop:true,
+			 	pagination: '.swiper-pagination',
+			 	paginationType :'bullets',
+			 	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+          			swiperAnimateCache(swiper); //隐藏动画元素 
+          			swiperAnimate(swiper); //初始化完成开始动画
+     				 }, 
+     			 onSlideChangeEnd: function(swiper){ 
+         			 swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+    				 } 
+			 })
+
+
+	</script>
+</body>
+</html>
